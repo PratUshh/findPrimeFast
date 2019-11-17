@@ -1,0 +1,24 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   int number=2;
+    bool flg=0;
+    cout<<2<<"\t";
+    number=3;
+    for(int count=1;count<10;number+=2){
+        for(int j = 3;j<(number/2);j+=2){
+            if(number%j==0){
+                flg=1;
+                break;
+            }    
+        }
+        if(flg==0)
+            {cout<<number<<"\t";count++;}
+        else
+            flg=0;
+    }
+    return 0;
+}
